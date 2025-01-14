@@ -1,6 +1,6 @@
-import security from "eslint-plugin-security";
+const security = require("eslint-plugin-security");
 
-export default [
+module.exports = [
   {
     files: ["**/*.js"],
     languageOptions: {
