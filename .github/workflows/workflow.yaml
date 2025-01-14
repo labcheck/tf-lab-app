@@ -31,7 +31,9 @@ jobs:
         node-version: 18.x
 
     - name: Build Application (SCA)
-      run: npm install
+      run: |
+        npm install
+        npm install eslint-plugin-security --save-dev
 
     - name: Run ESLint (SAST)
       run: npx eslint . --ext .js
