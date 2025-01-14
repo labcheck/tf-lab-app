@@ -36,7 +36,7 @@ jobs:
         npm install eslint@latest eslint-plugin-security@latest --save-dev
 
     - name: Run ESLint (SAST)
-      run: npx eslint .
+      run: npx eslint . -c eslintrc.js
 
     - name: Run app
       run: |
